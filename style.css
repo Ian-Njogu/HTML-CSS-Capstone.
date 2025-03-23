@@ -7,3 +7,6 @@
 .slideshow {
     animation: slide 9s infinite ease-in-out;
 }
+#main {
+    font-family: sans-serif;
+}
