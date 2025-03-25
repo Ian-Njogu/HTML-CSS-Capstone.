@@ -36,7 +36,7 @@
                 <p class="text-black font-semibold mt-1">4500 KES</p>
                 <p class="text-black font-semibold mt-2 text-lg"><span class="text-gray-400">Shoe size: <br> 39-45</span></p>
 
-                <button class="bg-black text-white px-10 py-2 mt-10 rounded-lg border-1 border-red hover:text-black hover:bg-black/50 transition text-sm">ADD TO CART</button>
+                <button onclick="hello()" class="bg-black text-white px-10 py-2 mt-10 rounded-lg border-1 border-red hover:text-black hover:bg-black/50 transition text-sm">ADD TO CART</button>
             </div>
 
         </div>
@@ -55,10 +55,10 @@
              <div>
                 <h3 class="text-lg font-semibold mb-2">Quick links</h3>
                 <ul class="space-y-1">
-                    <li><a href="#hero" class="text-white hover:underline transition">Home</a></li>
-                    <li><a href="about.html" class="text-white hover:underline transition">Men</a></li>
-                    <li><a href="contact.html" class="text-white hover:underline transition">Women</a></li>
-                    <li><a href="contact.html" class="text-white hover:underline transition">Blogs</a></li>
+                    <li><a href="index.html" class="text-white hover:underline transition">Home</a></li>
+                    <li><a href="men.html" class="text-white hover:underline transition">Men</a></li>
+                    <li><a href="women.html" class="text-white hover:underline transition">Women</a></li>
+                    <li><a href="blog.html" class="text-white hover:underline transition">Blogs</a></li>
                 </ul>
              </div>
              <!-- Contact Section -->
@@ -81,6 +81,11 @@
       
     
         </main>
+        <script>
+            function hello() {
+                alert("Shoe added to cart!")
+            }
+        </script>
     </body>
     </html>
 </body>
