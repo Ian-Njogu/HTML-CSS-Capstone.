@@ -22,15 +22,35 @@
 </head>
 <body>
      <!-- navbar section -->
+     
      <nav class="fixed top-0 w-full bg-white text-black flex justify-between items-center px-8 py-4" >
-        <div class="text-xl font-bold flex jusstify-center">SOLEMATE</div>
+        <div id="logo" class="text-xl font-bold flex jusstify-center">SOLEMATE</div>
+        
+        
         <ul class="hidden md:flex space-x-6 ">
-            <li><a href="#hero" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black">Home</a></li>
+            <li><a href="index.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black">Home</a></li>
             <li><a href="men.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Men</a></li>
-            <li><a href="about.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Women</a></li>
+            <li><a href="women.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Women</a></li>
             <li><a href="blog.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Blogs</a></li>
+            <li><a href="contact.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Contact Us</a></li>
         </ul>
-        <div class="md:hidden text-2xl cursor-pointer">&#9776;</div>
+         
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="hidden md:hidden flex flex-col space-y-6 py-4 px-6 w-full shadow-md">
+            <li><a href="index.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black">Home</a></li>
+            <li><a href="men.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Men</a></li>
+            <li><a href="women.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Women</a></li>
+            <li><a href="blog.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Blogs</a></li>
+            <li><a href="contact.html" class="hover:white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-black after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-100 hover:text-black">Contact Us</a></li>
+        </ul>
+
+        <div class="hidden md:block">
+            <i class="fa-solid fa-cart-shopping mr-5"></i>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        
+        <div id="menu-button" class="md:hidden text-2xl cursor-pointer">&#9776;</div>
+        
       </nav>
       <!-- Hero section -->
       <header id="hero" class="h-screen flex items-center justify-center text-white text-center slideshow">
@@ -45,8 +65,18 @@
     <main>
     <!-- New arrivals section -->
      <section id="Arrivals">
+    <div class="justify-between flex flex-wrap">
      <h1 class="uppercase tracking-wider font-bold text-2xl mt-5">new arrivals</h1>
-     <div class="grid grid-cols-4 max-w-8xl gap-5">
+     <div class=" flex w-full md:w-72 p-4">
+        <div class="justify-center">
+            <input type="text" placeholder="Search shoe..." class="w-full border border-black p-3 pl-4 pr-12 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+            <!-- <button class="top-1/2 transform -translate-y-1/2 text-black">
+                <i class="fa-solid fa-search cursor-pointer"></i>
+            </button> -->
+        </div>
+      </div>
+    </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-8xl gap-5">
         <a href="shoe.html">
         <div class="bg-white  rounded-lg p-4 hover:shadow-lg transition-shadow">
             <img src="assets\Screenshot 2025-03-22 095723.png" alt="" class="">
@@ -99,7 +129,7 @@
     <!-- Trending Section -->
      <section id="Trending">
     <h1 class="uppercase tracking-wider font-bold text-2xl mt-5">Trending sneakers</h1>
-    <div class="grid grid-cols-4 max-w-8xl gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-8xl gap-5">
         <div class="bg-white hover:cursor-pointer rounded-lg p-4 hover:shadow-lg transition-shadow">
             <img src="assets\Screenshot 2025-03-22 114331.png" alt="" class="">
             <div class="mt-4">
@@ -145,7 +175,7 @@
         <!-- Best Sellers -->
         <section id="trending">
             <h1 class="uppercase tracking-wider font-bold text-2xl mt-5">Best Sellers</h1>
-            <div class="grid grid-cols-4 max-w-8xl gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-8xl gap-5">
                 <div class="bg-white hover:cursor-pointer rounded-lg p-4 hover:shadow-lg transition-shadow">
                     <img src="assets\Screenshot 2025-03-22 121040.png" alt="" class="">
                     <div class="mt-4">
@@ -216,10 +246,10 @@
           <div>
             <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
             <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/?lang=en" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://ke.linkedin.com/" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
         
@@ -227,5 +257,6 @@
   
 
     </main>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
