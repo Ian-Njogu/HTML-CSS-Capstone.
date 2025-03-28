@@ -10,6 +10,8 @@ menuButton.addEventListener("click", () => {
      menuButton.style.color = "black";
 });
 
-
+function sub() {
+    alert("Thank you for subscribing!")
+}
 
 
